@@ -1,0 +1,13 @@
+// SPDX-License-Identifier: MIT
+// Generated with Spectral Syntax
+
+pragma solidity ^0.8.25;
+
+import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
+
+contract AnemoneBeaut is ERC20 {
+    constructor() ERC20("anemonebeaut", "anen") {
+        uint256 tokenSupply = 111111 * (10**decimals());
+        _mint(msg.sender, tokenSupply);
+    }
+}
